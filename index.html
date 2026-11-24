@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>National IT Skills Assessment 2026</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+
+<header>
+    <img src="uganda-coat-of-arms.png"
+         alt="Uganda Coat of Arms"
+         style="width:80px;">
+
+    <h1>National Information Technology Authority — Uganda</h1>
+</header>
+
+<section class="banner">
+    <img src="survey-banner.jpg" alt="Survey Banner">
+    <h2>Uganda National IT Skills Assessment 2026</h2>
+</section>
+
+<div class="progress">
+    <div class="step active">Step 1 — Respondent Details</div>
+    <div class="step">Step 2 — Skills Assessment</div>
+    <div class="step">Step 3 — Submit</div>
+</div>
+
+<main>
+
+    <form>
+
+        <fieldset>
+            <legend>Respondent Details</legend>
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <select id="title">
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                    <option>Ms</option>
+                    <option>Dr</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" minlength="4" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone"
+                       pattern="\+256[0-9]{9}"
+                       placeholder="+256700000000">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="options">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                    <label><input type="radio" name="gender"> Prefer not to say</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="region">Region</label>
+                <select id="region">
+                    <option>Central</option>
+                    <option>Eastern</option>
+                    <option>Northern</option>
+                    <option>Western</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Respondent Category</label>
+                <div class="options">
+                    <label><input type="radio" name="category"> ICT Professional</label>
+                    <label><input type="radio" name="category"> Government Officer</label>
+                    <label><input type="radio" name="category"> Student</label>
+                </div>
+            </div>
+
+            <button type="submit">Next</button>
+
+        </fieldset>
+
+    </form>
+
+</main>
+
+</body>
+</html>
